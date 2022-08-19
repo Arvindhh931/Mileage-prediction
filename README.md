@@ -14,9 +14,9 @@ This dataset is a slightly modified version of the dataset provided in the StatL
 
 1. mpg : fuel efficiency in miles per gallon (continuous)
 2. cylinders : Number of cylinders in a car (multi-valued discrete)
-3. displacement : (continuous)
+3. displacement : in cubic inches (continuous)
 4. horsepower : (continuous)
-5. weight : (continuous)
+5. weight : weight of car in pounds (continuous)
 6. acceleration : (continuous)
 7. model year : (multi-valued discrete)
 8. origin : 1,2,3 (multi-valued discrete)
@@ -26,6 +26,9 @@ Total 3 multivalued discrete and 5 continuous attributes
 
 ## Objective - 
 Prediction of city-cycle fuel consumption in miles per gallon given attributes
+
+## Assumptions - 
+origin is taken as 1: USA 2:Europe 3: Asia for convenience
 
 
 
