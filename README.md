@@ -24,10 +24,10 @@ This dataset is a slightly modified version of the dataset provided in the StatL
 
 Total 3 multivalued discrete and 5 continuous attributes
 
-## Objective - 
-Prediction of city-cycle fuel consumption in miles per gallon given attributes
+## Objective:
+Prediction of city-cycle fuel consumption in miles per gallon given technical aspects & vehicle information 
 
-## Assumptions - 
+## Assumptions:
 origin is taken as 1: USA 2:Europe 3: Asia for convenience
 
 
