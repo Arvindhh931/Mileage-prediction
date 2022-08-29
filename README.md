@@ -27,7 +27,7 @@ Total 3 multivalued discrete and 5 continuous attributes
 ## Objective:
 Prediction of city-cycle fuel consumption in miles per gallon given technical aspects & vehicle information 
 
-![Alt Text](https://external-preview.redd.it/v4X91VzmfsRyIRkFlOQKPUH563qLiu1C_Pz3v2BFuso.gif?width=960&format=mp4&s=c137ed9ac34ccf4ce978aaaa5b707f1911494ffb)
+![Alt Text](https://giphy.com/gifs/car-works-engine-TMAJKmJj3ys2k/fullscreen.gif)
 
 ## Assumptions:
 origin is taken as 1: USA 2:Europe 3: Asia for convenience
