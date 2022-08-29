@@ -32,5 +32,13 @@ Prediction of city-cycle fuel consumption in miles per gallon given technical as
 ## Assumptions:
 origin is taken as 1: USA 2:Europe 3: Asia for convenience
 
+## Final Predictive Model : Multiple linear Regression
 
-
+## Skills Aquired- 
+1) Exploratory Data Analysis
+2) Data pre-processing
+2) KNN-Imputer
+3) Linear Regression
+4) L1 & L2 Regularization
+5) Polynomial Linear Regression
+6) KNearestNeighbour Regression
