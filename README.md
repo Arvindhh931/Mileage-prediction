@@ -44,3 +44,4 @@ origin is taken as 1: USA 2:Europe 3: Asia for convenience
 4) L1 & L2 Regularization
 5) Polynomial Linear Regression
 6) KNearestNeighbour Regression
+7) Automatic Report generation (Functional Programming)
