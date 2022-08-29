@@ -29,6 +29,8 @@ Prediction of city-cycle fuel consumption in miles per gallon given technical as
 
 ![Alt Text](https://i.imgur.com/JSiYFsw.gif=250x250)
 
+<img src="/images/output/video1.gif" width="250" height="250"/>
+
 ## Assumptions:
 origin is taken as 1: USA 2:Europe 3: Asia for convenience
 
