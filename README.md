@@ -46,3 +46,8 @@ Kaggle - https://www.kaggle.com/code/hharvind/fuel-efficiency-prediction-in-mpg
 5) Polynomial Linear Regression
 6) KNearestNeighbour Regression
 7) Automatic Report generation (Functional Programming)
+
+## Liabraries used
+1) Numpy
+2) Pandas
+3) Scikit-learn
