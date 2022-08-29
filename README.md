@@ -32,7 +32,9 @@ Prediction of city-cycle fuel consumption in miles per gallon given technical as
 ## Assumptions:
 origin is taken as 1: USA 2:Europe 3: Asia for convenience
 
-## Final Predictive Model : Multiple linear Regression
+## Final Predictive Model 
+
+### Multiple linear Regression
 
 ## Skills Aquired- 
 1) Exploratory Data Analysis
