@@ -27,8 +27,6 @@ Total 3 multivalued discrete and 5 continuous attributes
 ## Objective:
 Prediction of city-cycle fuel consumption in miles per gallon given technical aspects & vehicle information 
 
-![Alt Text](https://i.imgur.com/LfdQrGG.gif)
-
 ![Alt Text](https://i.imgur.com/JSiYFsw.gif)
 
 ## Assumptions:
