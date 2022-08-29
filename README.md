@@ -47,6 +47,12 @@ Kaggle - https://www.kaggle.com/code/hharvind/fuel-efficiency-prediction-in-mpg
 6) KNearestNeighbour Regression
 7) Automatic Report generation (Functional Programming)
 
+## Key points
+1) Automobile Domain knowledge 
+2) Treating outliers when Less amount of Data available
+3) High Multi-collinearity
+4) Deployment 
+
 ## Liabraries used
 1) Numpy
 2) Pandas
