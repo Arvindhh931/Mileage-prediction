@@ -59,7 +59,8 @@ if selected == "Mileage":
                         category_encoding = encoder.transform([[cylinder,model_year,origin]]).flatten()
                         category_coded = pd.Series(category_encoding)
     
-                        values = numeric + categoric
+                        values = [horsepower,weight,acceleration,cylinder,model_year,origin]
+            
                         # Encoding & storing the query point for prediction ready format
                         numerical_data = pd.Series(numeric)
                         query = pd.concat([numerical_data,category_coded],axis=0).to_frame().T
