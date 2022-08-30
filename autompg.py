@@ -73,7 +73,7 @@ if selected == "Mileage":
                         # Prediction
                         prediction = model.predict(query)[0][0]
         
-                        col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
+                        col = ['horsepower','car_weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
                         values.append(prediction)
                         final_data = dict(zip(col,values))
                         # Storing the results in Database
