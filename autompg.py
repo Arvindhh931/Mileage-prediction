@@ -44,7 +44,7 @@ if selected == "Prediction":
         with col1:
             value1 = st.selectbox('Number of cylinders',('3', '4', '5', '6', '8'),key='cylinder')
         with col2:
-            value2 = st.selectbox('Car model year',('1971','1972','1973','1974','1975',                                              '1976','1977','1978','1979','1980','1981','1982'),key='model_year')
+            value2 = st.selectbox('Car model year',('1971','1972','1973','1974','1975','1976','1977','1978','1979','1980','1981','1982'),key='model_year')
         with col3:
             value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'),key='Region')
         return value1,value2,value3
@@ -52,12 +52,13 @@ if selected == "Prediction":
     cylinder,model_year,origin = category()
     
     # Exception
-    
-    if None in horsepower,weight,acceleration:
+    numeric_values = horsepower,weight,acceleration
+    categoric_values = cylinder,model_year,origin
+    if None in numeric_values:
         for i in horsepower,weight,acceleration:
         st.write("please enter all the values horsepower,weight & Acceleration")
         horsepower,weight,acceleration = numeric()
-    if None in cylinder,model_year,origin:
+    if None in categoric_values:
         st.write("please enter all the values No of cylinders, & Acceleration")
         cylinder,model_year,origin = category()
         
