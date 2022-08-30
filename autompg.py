@@ -32,8 +32,7 @@ if selected == "Mileage":
             acc = st.number_input('Acceleration (No seconds to reach 60mph speed)',0,50,20,key="input3")
             
             horsepower,weight,acceleration = hp,wt,acc
-            numeric = list((hp,wt,acc))
-            st.write(numeric)
+            
             col1,col2,col3 = st.columns(3)
             with col1:
                         value1 = st.selectbox('Number of cylinders',('3', '4', '5', '6', '8'),key="input4")
