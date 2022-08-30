@@ -91,12 +91,12 @@ if selected == "Mileage":
                         # Storing the results in Database
                         # database.put(final_data,key=str(datetime.now()))
                         st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
-hide_streamlit_style = """
-<style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style> """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# hide_streamlit_style = """
+# <style>
+# #MainMenu {visibility: hidden;}
+# footer {visibility: hidden;}
+# </style> """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
