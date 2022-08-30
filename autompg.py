@@ -33,6 +33,7 @@ if selected == "Mileage":
             
             horsepower,weight,acceleration = hp,wt,acc
             numeric = list((hp,wt,acc))
+            st.write(numeric)
             col1,col2,col3 = st.columns(3)
             with col1:
                         value1 = st.selectbox('Number of cylinders',('3', '4', '5', '6', '8'),key="input4")
@@ -44,6 +45,7 @@ if selected == "Mileage":
 
             cylinder,model_year,origin = value1,value2,value3
             categoric = list((value1,value2,value3))
+            st.write(categoric)
    
             confirm = st.button("Submit")
             if confirm:
