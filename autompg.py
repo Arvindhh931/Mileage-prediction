@@ -60,25 +60,26 @@ if selected == "Mileage":
             # if None in categoric_values:
             # st.write("please enter all the values No of cylinders, & Acceleration")
             # cylinder,model_year,origin = category()
-        
-            with open('./serialization/category_encoder.pickle','rb') as f1:
-                        encoder = pickle.load(f1)
-            with open('./serialization/final_model.pickle','rb') as f2:
-                        model = pickle.load(f2)
-      
-            # processing query point
-    
-            category_encoding = encoder.transform([[cylinder,model_year,origin]]).flatten()
-            category_coded = pd.Series(category_encoding)
-    
-            values = list(numeric())+list(category())
-    
-            # Encoding & storing the query point for prediction ready format
-            numerical_data = pd.Series(numeric())
-            query = pd.concat([numerical_data,category_coded],axis=0).to_frame().T
-    
             confirm = st.button("Submit")
             if confirm:
+                        with open('./serialization/category_encoder.pickle','rb') as f1:
+                                    encoder = pickle.load(f1)
+                        with open('./serialization/final_model.pickle','rb') as f2:
+                                    model = pickle.load(f2)
+      
+                        # processing query point
+    
+                        category_encoding = encoder.transform([[cylinder,model_year,origin]]).flatten()
+                        category_coded = pd.Series(category_encoding)
+    
+                        values = list(numeric())+list(category())
+    
+                        # Encoding & storing the query point for prediction ready format
+                        numerical_data = pd.Series(numeric())
+                        query = pd.concat([numerical_data,category_coded],axis=0).to_frame().T
+    
+            
+                        
                         # getting project key from .env file
                         # db_class = Deta(DETA_KEY)
                         # database = db_class.base('Autompg')
