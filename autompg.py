@@ -44,16 +44,7 @@ if selected == "Mileage":
 
             cylinder,model_year,origin = value1,value2,value3
             categoric = list((value1,value2,value3))
-    
-                        # Exception
-                        # numeric_values = horsepower,weight,acceleration
-                        # categoric_values = cylinder,model_year,origin
-                        # if None in numeric_values:
-            # st.write("please enter all the values horsepower,weight & Acceleration")
-            # horsepower,weight,acceleration = numeric()
-            # if None in categoric_values:
-            # st.write("please enter all the values No of cylinders, & Acceleration")
-            # cylinder,model_year,origin = category()
+   
             confirm = st.button("Submit")
             if confirm:
                         with open('./serialization/category_encoder.pickle','rb') as f1:
@@ -75,7 +66,7 @@ if selected == "Mileage":
                         
                         # getting project key from .env file
                         db_class = Deta(DETA_KEY)
-                        database = db_class.base('Autompg')
+                        database = db_class.Base('Autompg')
         
                         # Prediction
                         prediction = model.predict(query)[0][0]
