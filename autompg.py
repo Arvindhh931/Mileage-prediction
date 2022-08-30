@@ -45,7 +45,6 @@ if selected == "Mileage":
 
             cylinder,model_year,origin = value1,value2,value3
             categoric = list((value1,value2,value3))
-            st.write(categoric)
    
             confirm = st.button("Submit")
             if confirm:
@@ -75,12 +74,10 @@ if selected == "Mileage":
                         prediction = model.predict(query)[0][0]
         
                         col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
-                        values = [horsepower,weight,acceleration,cylinder,model_year,origin]
                         values.append(prediction)
-                        # final_data = dict(zip(col,values))
-                        st.write(values)
+                        final_data = dict(zip(col,values))
                         # Storing the results in Database
-                        database.put(values,key=str(datetime.now()))
+                        database.put(final_data,key=str(datetime.now()))
                         st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
 # hide_streamlit_style = """
 # <style>
