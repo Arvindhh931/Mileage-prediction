@@ -37,7 +37,7 @@ if selected == "Mileage":
         wt = st.numer_input('weight in pounds',0,10000,None,key='weight')
         acc = st.numer_input('Acceleration (No seconds to reach 60mph speed)',0,50,None,key='acceleration')
         return hp,wt,acc
-    numeric()
+
     horsepower,weight,acceleration = numeric()
     
     def category():
@@ -49,7 +49,7 @@ if selected == "Mileage":
         with col3:
             value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'),key='Region')
         return value1,value2,value3
-    category()
+
     cylinder,model_year,origin = category()
     
     # Exception
