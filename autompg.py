@@ -31,7 +31,7 @@ if selected == "Mileage":
             st.markdown("Please enter the details") 
     
             def numeric():
-                        hp = st.number_input('Horsepower',40,170,10,key='horsepower')
+                        hp = st.number_input('Horsepower',40,170,75,key='horsepower')
                         wt = st.number_input('weight in pounds',0,10000,2000,key='weight')
                         acc = st.number_input('Acceleration (No seconds to reach 60mph speed)',0,50,20,key='acceleration')
                         return hp,wt,acc
