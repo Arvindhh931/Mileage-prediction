@@ -7,14 +7,10 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-import os
-# from deta import Deta
-# from dotenv import load_dotenv
-# from datetime import datetime
+from deta import Deta
+from datetime import datetime
 
-# load_dotenv(".env")
-
-# DETA_KEY = os.getenv("DETA_KEY")
+DETA_KEY = st.secrets["DETA_KEY"]
 
 st.set_page_config(page_title='Car Mileage prediction',page_icon="")
 st.header("Fuel Efficiency in miles per gallon")
@@ -78,18 +74,18 @@ if selected == "Mileage":
             
                         
                         # getting project key from .env file
-                        # db_class = Deta(DETA_KEY)
-                        # database = db_class.base('Autompg')
+                        db_class = Deta(DETA_KEY)
+                        database = db_class.base('Autompg')
         
                         # Prediction
                         prediction = model.predict(query)[0][0]
         
                         col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
                         values = values.append(prediction)
-                        # final_data = dict(zip(col,values))
+                        final_data = dict(zip(col,values))
         
                         # Storing the results in Database
-                        # database.put(final_data,key=str(datetime.now()))
+                        database.put(final_data,key=str(datetime.now()))
                         st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
 # hide_streamlit_style = """
 # <style>
