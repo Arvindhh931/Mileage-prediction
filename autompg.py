@@ -74,9 +74,9 @@ if selected == "Mileage":
                         col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
                         values = values.append(prediction)
                         final_data = dict(zip(col,values))
-        
+                        st.write(values)
                         # Storing the results in Database
-                        database.put(final_data,key=str(datetime.now()))
+                        # database.put(final_data,key=str(datetime.now()))
                         st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
 # hide_streamlit_style = """
 # <style>
