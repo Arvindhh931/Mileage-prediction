@@ -64,8 +64,6 @@ if selected == "Mileage":
                         numerical_data = pd.Series(numeric)
                         query = pd.concat([numerical_data,category_coded],axis=0).to_frame().T
     
-            
-                        
                         # getting project key from .env file
                         db_class = Deta(DETA_KEY)
                         database = db_class.Base('Autompg')
