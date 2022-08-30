@@ -26,9 +26,7 @@ styles={
             "container": {"padding": "0!important", "background-color": "#000"},
             "icon": {"color": "orange", "font-size": "20px"}, 
             "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#000"},
-            "nav-link-selected": {"background-color": "green"},
-            "position": 
-        })
+            "nav-link-selected": {"background-color": "green"}})
 if selected == "Prediction":
     st.markdown("### Prediction of Fuel efficiency in Miles per gallon")
     st.markdown("#### Please enter the details") 
