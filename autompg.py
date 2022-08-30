@@ -32,6 +32,7 @@ if selected == "Mileage":
             acc = st.number_input('Acceleration (No seconds to reach 60mph speed)',0,50,20,key="input3")
             
             horsepower,weight,acceleration = hp,wt,acc
+            numeric = hp,wt,acc
             
             col1,col2,col3 = st.columns(3)
             with col1:
@@ -43,7 +44,7 @@ if selected == "Mileage":
                         value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'),key="input6")
 
             cylinder,model_year,origin = value1,value2,value3
-            categoric = list((value1,value2,value3))
+            categoric = value1,value2,value3
    
             confirm = st.button("Submit")
             if confirm:
