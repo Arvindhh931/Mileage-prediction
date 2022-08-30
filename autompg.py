@@ -73,6 +73,8 @@ if selected == "Mileage":
                         category_coded = pd.Series(category_encoding)
     
                         values = list(numeric())+list(category())
+            
+                        st.write(f"values - {values}")
     
                         # Encoding & storing the query point for prediction ready format
                         numerical_data = pd.Series(numeric())
