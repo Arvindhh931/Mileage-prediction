@@ -79,20 +79,20 @@ if selected == "Mileage":
     
             confirm = st.button("Submit")
             if confirm:
-            # getting project key from .env file
-            # db_class = Deta(DETA_KEY)
-            # database = db_class.base('Autompg')
+                        # getting project key from .env file
+                        # db_class = Deta(DETA_KEY)
+                        # database = db_class.base('Autompg')
         
-            # Prediction
-            prediction = MLR_regression.predict(query)[0][0]
+                        # Prediction
+                        prediction = MLR_regression.predict(query)[0][0]
         
-            col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
-            values = values.apped(prediction)
-            final_data = dict(col,values)
+                        col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
+                        values = values.apped(prediction)
+                        final_data = dict(col,values)
         
-            # Storing the results in Database
-            # database.put(final_data,key=str(datetime.now()))
-            st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
+                        # Storing the results in Database
+                        # database.put(final_data,key=str(datetime.now()))
+                        st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
 
             hide_streamlit_style = """
                         <style>
