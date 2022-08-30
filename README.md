@@ -59,3 +59,4 @@ Kaggle - https://www.kaggle.com/code/hharvind/fuel-efficiency-prediction-in-mpg
 1) Numpy
 2) Pandas
 3) Scikit-learn
+4) Streamlit (Deployment)
