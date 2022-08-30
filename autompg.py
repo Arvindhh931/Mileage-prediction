@@ -19,7 +19,7 @@ import os
 st.set_page_config(page_title='Car Mileage prediction',page_icon="")
 st.header("Fuel Efficiency in miles per gallon")
 
-selected = option_menu(menu_title=None,options=["Mileage Prediction","Project","Information"],
+selected = option_menu(menu_title=None,options=["Predict Mileage","Project","Information"],
 icons=["house","book","envelope"],menu_icon="cast",default_index=0,
 orientation='horizontal',
 styles={
@@ -27,7 +27,7 @@ styles={
             "icon": {"color": "orange", "font-size": "20px"}, 
             "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#000"},
             "nav-link-selected": {"background-color": "green"}})
-if selected == "Prediction":
+if selected == "Predict Mileage":
     st.markdown("### Prediction of Fuel efficiency in Miles per gallon")
     st.markdown("#### Please enter the details") 
     
