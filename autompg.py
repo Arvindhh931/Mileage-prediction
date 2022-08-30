@@ -31,9 +31,9 @@ if selected == "Mileage":
             st.markdown("Please enter the details") 
     
             def numeric():
-                        hp = st.number_input('Horsepower',40,170,75,key='input1')
-                        wt = st.number_input('weight in pounds',0,10000,2000,key='input2')
-                        acc = st.number_input('Acceleration (No seconds to reach 60mph speed)',0,50,20,key='input3')
+                        hp = st.number_input('Horsepower',40,170,75)
+                        wt = st.number_input('weight in pounds',0,10000,2000)
+                        acc = st.number_input('Acceleration (No seconds to reach 60mph speed)',0,50,20)
                         return hp,wt,acc
 
             horsepower,weight,acceleration = numeric()
@@ -41,12 +41,12 @@ if selected == "Mileage":
             def category():
                         col1,col2,col3 = st.columns(3)
                         with col1:
-                                    value1 = st.selectbox('Number of cylinders',('3', '4', '5', '6', '8'),key='input4')
+                                    value1 = st.selectbox('Number of cylinders',('3', '4', '5', '6', '8'))
                         with col2:
                                     value2 = st.selectbox('Car model year',('1971','1972','1973','1974','1975','1976','1977','1978','1979','1980',
-                                                                            '1981','1982'),key='input5')
+                                                                            '1981','1982'))
                         with col3:
-                                    value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'),key='nput6')
+                                    value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'))
                         return value1,value2,value3
 
             cylinder,model_year,origin = category()
