@@ -19,7 +19,7 @@ import os
 st.set_page_config(page_title='Car Mileage prediction',page_icon="")
 st.header("Fuel Efficiency in miles per gallon")
 
-selected = option_menu(menu_title=None,options=["Predict Mileage","Project","Information"],
+selected = option_menu(menu_title=None,options=["Mileage","Project","Information"],
 icons=["house","book","envelope"],menu_icon="cast",default_index=0,
 orientation='horizontal',
 styles={
@@ -27,16 +27,17 @@ styles={
             "icon": {"color": "orange", "font-size": "20px"}, 
             "nav-link": {"font-size": "20px", "text-align": "left", "margin":"0px", "--hover-color": "#000"},
             "nav-link-selected": {"background-color": "green"}})
-if selected == "Predict Mileage":
+if selected == "Mileage":
     st.markdown("### Prediction of Fuel efficiency in Miles per gallon")
-    st.markdown("#### Please enter the details") 
+
+    st.markdown("Please enter the details") 
     
     def numeric():
         hp = st.numer_input('Horsepower',40,170,None,key='horsepower')
         wt = st.numer_input('weight in pounds',0,10000,None,key='weight')
         acc = st.numer_input('Acceleration (No seconds to reach 60mph speed)',0,50,None,key='acceleration')
         return hp,wt,acc
-    
+    numeric()
     horsepower,weight,acceleration = numeric()
     
     def category():
@@ -48,7 +49,7 @@ if selected == "Predict Mileage":
         with col3:
             value3 = st.selectbox('Region',('USA', 'Europe', 'Asia'),key='Region')
         return value1,value2,value3
-    
+    category()
     cylinder,model_year,origin = category()
     
     # Exception
