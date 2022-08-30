@@ -76,7 +76,7 @@ if selected == "Mileage":
                         final_data = dict(zip(col,values))
                         # Storing the results in Database
                         database.put(final_data,key=str(datetime.now()))
-                        st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
+                        st.success(f"Car mileage is {round(prediction,2)} miles per gallon")
 # hide_streamlit_style = """
 # <style>
 # #MainMenu {visibility: hidden;}
