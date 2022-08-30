@@ -55,7 +55,6 @@ if selected == "Prediction":
     numeric_values = horsepower,weight,acceleration
     categoric_values = cylinder,model_year,origin
     if None in numeric_values:
-        for i in horsepower,weight,acceleration:
         st.write("please enter all the values horsepower,weight & Acceleration")
         horsepower,weight,acceleration = numeric()
     if None in categoric_values:
