@@ -82,7 +82,7 @@ if selected == "Mileage":
                         # database = db_class.base('Autompg')
         
                         # Prediction
-                        prediction = MLR_regression.predict(query)[0][0]
+                        prediction = model.predict(query)[0][0]
         
                         col = ['horsepower','weight','acceleration','cylinder','model_year','country/origin','mpg_predicted']
                         values = values.apped(prediction)
