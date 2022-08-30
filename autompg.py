@@ -31,7 +31,7 @@ if selected == "Mileage":
             st.markdown("Please enter the details") 
     
             def numeric():
-                        hp = st.numer_input('Horsepower',40,170,75,key='horsepower')
+                        hp = st.numer_input('Horsepower',40,170,10,key='horsepower')
                         wt = st.numer_input('weight in pounds',0,10000,2000,key='weight')
                         acc = st.numer_input('Acceleration (No seconds to reach 60mph speed)',0,50,20,key='acceleration')
                         return hp,wt,acc
@@ -93,13 +93,12 @@ if selected == "Mileage":
                         # Storing the results in Database
                         # database.put(final_data,key=str(datetime.now()))
                         st.success(f"Car mileage is {round(prediction,0)} miles per gallon")
-
-            hide_streamlit_style = """
-                        <style>
-                        #MainMenu {visibility: hidden;}
-                        footer {visibility: hidden;}
-                        </style> """
-            st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style> """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
