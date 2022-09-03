@@ -1,6 +1,6 @@
 # Fuel Efficiency prediction 
 
-### **Deployment** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-iw5tvu.streamlitapp.com/)
+### **Deployment link** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-iw5tvu.streamlitapp.com/)
 ### **Integrating web application with database using cloud service 'Deta'**
 ## Source:
 
