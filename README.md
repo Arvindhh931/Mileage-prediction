@@ -1,4 +1,6 @@
-# Fuel Efficiency prediction 
+# Fuel Efficiency prediction
+
+### with Root mean sqauared error of 2.5 miles per gallon
 
 ### **Deployment link** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-iw5tvu.streamlitapp.com/)
 ### **Integrating web application with database using cloud service 'Deta'**
