@@ -2,7 +2,7 @@
 
 ### with Root mean sqauared error of 2.5 miles per gallon
 
-### **Deployment link** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-iw5tvu.streamlitapp.com/)
+### **Deployment link** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-57du1p.streamlit.app/)
 ### **Integrating web application with database using cloud service 'Deta'**
 ## Source:
 
