@@ -3,7 +3,7 @@
 ### with Root mean sqauared error of 2.5 miles per gallon
 
 ### **Deployment link** - [Make Prediction using various car features](https://arvindhh931-mileage-prediction-autompg-57du1p.streamlit.app/)
-### **Integrating web application with database using cloud service 'Deta'**
+### **Integrating web application with database to collect data for prediction using cloud database service 'Deta'**
 ## Source:
 
 This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University. The dataset was used in the 1983 American Statistical Association Exposition.
